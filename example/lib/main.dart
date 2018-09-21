@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'dart:async';
 import 'package:simple_slider/simple_slider.dart';
 
 void main() => runApp(new MyApp());
@@ -23,7 +22,7 @@ class MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    var title = "Image Slider";
+    var title = "Image Slider Widget";
     return MaterialApp(
       title: title,
       home: Scaffold(
