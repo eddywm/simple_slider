@@ -3,7 +3,8 @@
 
 (https://pub.dartlang.org/packages/simple_slider)
 
-A flutter library to show images in a sliding widget, the library will also automatically cache the images.
+A flutter library to show images in a sliding widget, the library  also provides out of the box the ability to
+ automatically cache the images used in the slider.
 
 ## How to add
 
