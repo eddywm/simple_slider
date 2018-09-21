@@ -1,7 +1,7 @@
 name: simple_slider
 description: A Flutter slider widget
 version: 0.0.1
-author: Eddy WM
+author: Eddy WM <eddywmdev@gmail.com>
 homepage: https://github.com/eddywm/simple_slider
 
 environment:
