@@ -29,3 +29,17 @@ ImageSliderWidget(
  ```
 
 ## How it looks
+
+
+<br>
+<p align="center">
+
+  <img src="https://raw.githubusercontent.com/eddywm/simple_slider/master/screenshots/flutter_01.png" width="250">
+
+   <img src="https://raw.githubusercontent.com/eddywm/simple_slider/master/screenshots/flutter_02.png" width="250">
+
+   <img src="https://raw.githubusercontent.com/eddywm/simple_slider/master/screenshots/flutter_03.png" width="250">
+
+   </p>
+<br>
+<br>
