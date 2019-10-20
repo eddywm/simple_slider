@@ -108,12 +108,12 @@ class ImageSliderWidgetState extends State<ImageSliderWidget> {
       borderRadius: widget.imageBorderRadius,
       child: CachedNetworkImage(
         imageUrl: imgUrl,
-        placeholder: Center(
+        placeholder: (context, url) => Center(
           child: Platform.isIOS
               ? CupertinoActivityIndicator()
               : CircularProgressIndicator(),
         ),
-        errorWidget: Icon(Icons.error),
+        errorWidget: (context, url, error) => Icon(Icons.error),
         fit: BoxFit.cover,
       ),
     );
