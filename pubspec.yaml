@@ -10,7 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cached_network_image: ^1.1.2+1
+  cached_network_image: ^2.0.0
   shared_preferences: ^0.5.3+5
   cupertino_icons: ^0.1.2
 
