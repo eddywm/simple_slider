@@ -1,4 +1,3 @@
-
 import 'dart:math';
 
 import 'package:flutter/material.dart';
@@ -35,13 +34,15 @@ class DotsIndicator extends AnimatedWidget {
   static const double _kDotSpacing = 15.0;
 
   Widget _buildDot(int index) {
-    double selectedness = Curves.easeOut.transform(
-      max(
-        0.0,
-//        1.0 -  (controller.hasClients ?  ( ((controller.page ?? controller.initialPage) - index).abs()) : 0),
-        1.0 -  ((controller.page ?? controller.initialPage) - index).abs(),
-      ),
+    var _mod = (controller.page ?? controller.initialPage) % itemCount;
+    double _max = max(
+      0.0,
+      1.0 - (_mod - index).abs(),
     );
+    if (_mod > itemCount - 1 && index == 0) {
+      _max = max(0.0, 1.0 - (_mod - itemCount).abs());
+    }
+    double selectedness = Curves.easeOut.transform(_max);
     double zoom = 1.0 + (_kMaxZoom - 1.0) * selectedness;
     return new Container(
       width: _kDotSpacing,
